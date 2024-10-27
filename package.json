@@ -1,6 +1,6 @@
 {
   "name": "compress-rs",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "main": "index.js",
   "types": "index.d.ts",
   "repository": {
@@ -9,12 +9,16 @@
   },
   "napi": {
     "name": "compress-rs",
-    "triples": {}
+    "triples": {
+      "additional": [
+        "universal-apple-darwin"
+      ]
+    }
   },
   "license": "MIT",
   "devDependencies": {
     "@napi-rs/cli": "^2.18.4",
-    "ava": "^6.0.1"
+    "ava": "^6.1.3"
   },
   "ava": {
     "timeout": "3m"
