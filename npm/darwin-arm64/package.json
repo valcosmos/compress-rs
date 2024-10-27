@@ -1,6 +1,6 @@
 {
-  "name": "compress-rs-darwin-universal",
-  "version": "0.0.6",
+  "name": "compress-rs-darwin-arm64",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/valcosmos/compress-rs"
@@ -8,9 +8,12 @@
   "os": [
     "darwin"
   ],
-  "main": "napi-demo.darwin-universal.node",
+  "cpu": [
+    "arm64"
+  ],
+  "main": "compress-rs.darwin-arm64.node",
   "files": [
-    "napi-demo.darwin-universal.node"
+    "compress-rs.darwin-universal.node"
   ],
   "license": "MIT",
   "engines": {

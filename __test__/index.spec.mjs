@@ -1,7 +1,10 @@
 import test from 'ava'
 
-import { sum } from '../index.js'
+import { Algorithm, CompressionType, getCompressionOptions } from '../index.js'
 
-test('sum from native', (t) => {
-  t.is(sum(1, 2), 3)
+test('get compression options', (t) => {
+  t.deepEqual(getCompressionOptions(Algorithm.Gzip, { compressionType: CompressionType.Best }), {
+    level: 9,
+    compressionType: CompressionType.Best
+  })
 })
