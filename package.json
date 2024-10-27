@@ -26,10 +26,5 @@
     "test": "ava",
     "universal": "napi universal",
     "version": "napi version"
-  },
-  "optionalDependencies": {
-    "compress-rs-win32-x64-msvc": "0.0.1",
-    "compress-rs-darwin-x64": "0.0.1",
-    "compress-rs-linux-x64-gnu": "0.0.1"
   }
 }
