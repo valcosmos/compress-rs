@@ -70,9 +70,9 @@ pub fn get_compression_options(
   let default_option = default_options.get(&algorithm).unwrap();
 
   let final_level = match compression_options.compression_type {
-    Some(CompressionType::Fast) => Some(1), // Example: Fast might correspond to level 1
-    Some(CompressionType::Best) => default_option.level, // Use default level for Best
-    None => compression_options.level.or(default_option.level), // Use provided or default level
+    Some(CompressionType::Fast) => Some(1), 
+    Some(CompressionType::Best) => default_option.level, 
+    None => compression_options.level.or(default_option.level), 
   };
 
   CompressionOptions {
