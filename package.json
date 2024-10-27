@@ -3,6 +3,10 @@
   "version": "0.0.5",
   "main": "index.js",
   "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valcosmos/compress-rs"
+  },
   "napi": {
     "name": "compress-rs",
     "triples": {}
